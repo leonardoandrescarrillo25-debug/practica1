@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULAR IMC</title>
+    <script type="text/javascript">
+        function calcularimc(){
+            var p, a, imc;
+            p = parseFloat(document.getElementById("txt_peso1").value);
+            a = parseFloat(document.getElementById("txt_altura1").value);
+            imc = p/(a*a);
+            document.getElementById("txt_res").value=imc;
+        }
+    </script>
+</head>
+<body>
+  <form name="frm_imc">
+    <input type="text" name="txt_peso" placeholder="peso" id="txt_peso1"><br>
+    <input type="text" name="txt_altura" placeholder="altura" id="txt_altura1"><br>
+    <input type="text" id="txt_res" placeholder="resultado"><br>
+    <input type="button" value="c.imc" onclick="calcularimc()">
+  </form>  
+</body>
+</html>
