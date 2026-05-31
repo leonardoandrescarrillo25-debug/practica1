@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function suma3(){
+            var num1, num2, num3, res;
+            num1 = parseInt(document.getElementById("txt_num1").value);
+             num2 = parseInt(document.getElementById("txt_num2").value);
+              num3 = parseInt(document.getElementById("txt_num3").value);
+            res = num1 + num2 + num3;
+            document.getElementById("txt_res").value=res;
+        }
+    </script>
+</head>
+<body>
+    <form name="frm_imc">
+    <input type="text" name="txt_txt_primer" placeholder="numero 1" id="txt_num1"><br>
+  <input type="text" name="txt_segundo" placeholder="numero 2" id="txt_num2"><br>
+  <input type="text" name="txt_tercero" placeholder="numero 3" id="txt_num3"><br>
+    <input type="text" id="txt_res" placeholder="resultado"><br>
+    <input type="button" value="sumar" onclick="suma3()">
+  </form>  
+</body>
+</html>
